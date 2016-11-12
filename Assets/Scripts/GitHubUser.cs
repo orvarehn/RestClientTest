@@ -36,5 +36,10 @@ namespace JsonApiClient
 		public int following { get; set; }
 		public string created_at { get; set; }
 		public string updated_at { get; set; }
+		public string zen_url = @"https://api.github.com/zen";
+		public ArrayList urls
+		{
+			get { return new ArrayList (new string[] {zen_url, avatar_url, url, html_url, followers_url, following_url, gists_url, subscriptions_url, repos_url, events_url, received_events_url}); }
+		}
 	}
 }
